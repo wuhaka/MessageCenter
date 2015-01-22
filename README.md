@@ -14,17 +14,19 @@ MessageCenter.register(this)
 and a default method 
 ```JAVA 
 onHandMessage()
-```is the callback
-with any number of parameters.
+```
+is the callback with any number of parameters.
 
 
 if a one-to-many communication, you can notify 'method' via 
 ```JAVA
 MessageCenter.notify(MessageMethod.AMETHOD, p1,p2..)
-```surely,you should register in the designated components via
+````
+surely,you should register in the designated components via
 ```JAVA
 MessageCenter.register(MessageMethod.AMETHOD)
-```and you should wirite 
+```
+and you should wirite 
 ```JAVA
 public void amethod(p1, p2...)
 ```
